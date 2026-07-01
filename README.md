@@ -9,13 +9,13 @@ This repository is packed as a global CLI tool that lets you interactively choos
 You can install it globally via npm:
 
 ```bash
-npm install -g mad-modular-apps
+npm install -g mad-apps
 ```
 
 Or run it directly without installation using `npx`:
 
 ```bash
-npx mad-modular-apps
+npx mad-apps
 ```
 
 ## Available Apps

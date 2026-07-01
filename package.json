@@ -1,5 +1,5 @@
 {
-  "name": "mad-modular-apps",
+  "name": "mad-apps",
   "version": "1.0.0",
   "description": "A zero-dependency collection of 12 modular web applications (Calculator, Weather, Chat, and custom HTML/CSS pages) easily launched via CLI.",
   "main": "cli.js",
