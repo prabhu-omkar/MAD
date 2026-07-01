@@ -1,0 +1,104 @@
+/* Simple Two-Way Chat Stylesheet */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    margin: 0;
+    padding: 20px;
+}
+
+.chat-container {
+    display: flex;
+    max-width: 1000px; /* Reduced from 1200px to sit comfortably in the viewport */
+    margin: 20px auto;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .chat-container {
+        flex-direction: column;
+    }
+}
+
+.chat-box {
+    flex: 1;
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.chat-box h2 {
+    margin-top: 0;
+    font-size: 1.25rem;
+    color: #1e293b;
+    border-bottom: 2px solid #f1f5f9;
+    padding-bottom: 8px;
+}
+
+/* Chat Message Log Box */
+.message-log {
+    height: 400px; /* Reduced from 480px for a more compact size */
+    overflow-y: auto;
+    border: 1px solid #e2e8f0;
+    background-color: #f8fafc;
+    border-radius: 4px;
+    padding: 12px;
+    margin-bottom: 15px;
+}
+
+.msg {
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    width: fit-content;
+    max-width: 85%;
+}
+
+/* WhatsApp Alignment styling: 
+   mine (own) on right, other (partner) on left */
+.mine {
+    margin-left: auto;
+    margin-right: 0;
+    background-color: #d1fae5; /* Green bubble for my message */
+    color: #065f46;
+}
+
+.other {
+    margin-right: auto;
+    margin-left: 0;
+    background-color: #dbeafe; /* Blue bubble for other person's message */
+    color: #1e40af;
+}
+
+/* Form controls */
+form {
+    display: flex;
+    gap: 8px;
+}
+
+form input {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    outline: none;
+    font-size: 0.95rem;
+}
+
+form button {
+    padding: 8px 16px;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+form button:hover {
+    background-color: #2563eb;
+}

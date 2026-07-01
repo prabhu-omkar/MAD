@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Weather Guide</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="weather-container">
+        <h1>City Weather Guide</h1>
+        <p class="subtitle">Select a city to check the current weather</p>
+
+        <!-- City Selector Grid (10 Cities) -->
+        <div class="city-grid">
+            <button class="city-btn" onclick="selectCity('london')">London</button>
+            <button class="city-btn" onclick="selectCity('paris')">Paris</button>
+            <button class="city-btn" onclick="selectCity('tokyo')">Tokyo</button>
+            <button class="city-btn" onclick="selectCity('newyork')">New York</button>
+            <button class="city-btn" onclick="selectCity('sydney')">Sydney</button>
+            <button class="city-btn" onclick="selectCity('rome')">Rome</button>
+            <button class="city-btn" onclick="selectCity('berlin')">Berlin</button>
+            <button class="city-btn" onclick="selectCity('cairo')">Cairo</button>
+            <button class="city-btn" onclick="selectCity('mumbai')">Mumbai</button>
+            <button class="city-btn" onclick="selectCity('toronto')">Toronto</button>
+        </div>
+
+        <!-- Weather Display Card -->
+        <div id="weather-card" class="weather-card">
+            <h2 id="city-name">City Name</h2>
+            <div class="weather-info">
+                <span id="temperature" class="temp-value">--°C</span>
+            </div>
+            <p id="description" class="weather-desc">Weather State</p>
+
+            <div class="weather-details">
+                <div class="detail-item">
+                    <span class="detail-label">Humidity</span>
+                    <span id="humidity" class="detail-val">--%</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Wind Speed</span>
+                    <span id="wind" class="detail-val">-- km/h</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Weather</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="weather-container">
+        <h1>City Weather Guide</h1>
+        <p class="subtitle">Select a city to check the current weather</p>
+
+        <!-- Weather Display Card (Top Placement) -->
+        <div id="weather-card" class="weather-card">
+            <h2 id="city-name">City Name</h2>
+            <div class="weather-info">
+                <span id="temperature" class="temp-value">--°C</span>
+            </div>
+            <p id="description" class="weather-desc">Weather State</p>
+
+            <div class="weather-details">
+                <div class="detail-item">
+                    <span class="detail-label">Humidity</span>
+                    <span id="humidity" class="detail-val">--%</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Wind Speed</span>
+                    <span id="wind" class="detail-val">-- km/h</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- City Selector Grid (8 Cities) -->
+        <div class="city-grid">
+            <button class="city-btn" onclick="selectCity('chicago')">Chicago</button>
+            <button class="city-btn" onclick="selectCity('miami')">Miami</button>
+            <button class="city-btn" onclick="selectCity('seattle')">Seattle</button>
+            <button class="city-btn" onclick="selectCity('boston')">Boston</button>
+            <button class="city-btn" onclick="selectCity('dublin')">Dublin</button>
+            <button class="city-btn" onclick="selectCity('madrid')">Madrid</button>
+            <button class="city-btn" onclick="selectCity('vienna')">Vienna</button>
+            <button class="city-btn" onclick="selectCity('amsterdam')">Amsterdam</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+/* Minimal Weather App Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef2f7; /* Flat light-grey/blue */
+    color: #333333;
+    padding: 20px;
+    text-align: center;
+}
+
+.weather-container {
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    max-width: 360px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 1.4rem;
+    margin-top: 0;
+}
+
+.subtitle {
+    font-size: 0.85rem;
+    color: #666666;
+}
+
+/* 10 Cities Selector Grid */
+.city-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+    margin: 15px 0;
+}
+
+.city-btn {
+    padding: 6px;
+    background-color: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+.city-btn:hover {
+    background-color: #e2e8f0;
+}
+
+.city-btn.active {
+    background-color: #3b82f6; /* Ocean blue active highlight */
+    color: #ffffff;
+    border-color: #3b82f6;
+}
+
+/* Weather display card info */
+.weather-card {
+    border-top: 1px solid #e2e8f0;
+    margin-top: 15px;
+    padding-top: 15px;
+}
+
+.temp-value {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.weather-desc {
+    font-style: italic;
+    color: #666666;
+    margin-bottom: 15px;
+}
+
+/* Extra Details list */
+.weather-details {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 10px;
+    font-size: 0.85rem;
+}
+
+.detail-label {
+    color: #777777;
+}
+
+.detail-val {
+    font-weight: bold;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="weather-container">
+        <h1>City Weather Guide</h1>
+
+        <div class="weather-layout">
+            <!-- Sidebar: City Selector Column (6 Cities) -->
+            <div class="city-sidebar">
+                <button class="city-btn" onclick="selectCity('beijing')">Beijing</button>
+                <button class="city-btn" onclick="selectCity('seoul')">Seoul</button>
+                <button class="city-btn" onclick="selectCity('singapore')">Singapore</button>
+                <button class="city-btn" onclick="selectCity('dubai')">Dubai</button>
+                <button class="city-btn" onclick="selectCity('bangkok')">Bangkok</button>
+                <button class="city-btn" onclick="selectCity('capetown')">Cape Town</button>
+            </div>
+
+            <!-- Main Content Area: Weather Display -->
+            <div id="weather-card" class="weather-card">
+                <h2 id="city-name">City Name</h2>
+                <div class="weather-info">
+                    <span id="temperature" class="temp-value">--°C</span>
+                </div>
+                <p id="description" class="weather-desc">Weather State</p>
+
+                <div class="weather-details">
+                    <div class="detail-item">
+                        <span class="detail-label">Humidity</span>
+                        <span id="humidity" class="detail-val">--%</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Wind Speed</span>
+                        <span id="wind" class="detail-val">-- km/h</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

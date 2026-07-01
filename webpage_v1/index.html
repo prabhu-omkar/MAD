@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-Recipe Cookbook</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cookbook-container">
+        <h1>Mini Cookbook</h1>
+        
+        <!-- CSS Radio tabs for state management -->
+        <input type="radio" id="tab-pasta" name="recipe-tabs" checked class="tab-input">
+        <input type="radio" id="tab-salad" name="recipe-tabs" class="tab-input">
+        <input type="radio" id="tab-pancakes" name="recipe-tabs" class="tab-input">
+
+        <div class="layout-wrapper">
+            <!-- Left Navigation Labels linked to radio inputs -->
+            <div class="sidebar">
+                <label for="tab-pasta" class="nav-label label-pasta">Tomato Pasta</label>
+                <label for="tab-salad" class="nav-label label-salad">Garden Salad</label>
+                <label for="tab-pancakes" class="nav-label label-pancakes">Banana Pancakes</label>
+            </div>
+
+            <!-- Recipe Display Panels -->
+            <div class="recipe-card-container">
+                <!-- Recipe 1 -->
+                <div class="recipe-card pasta-content">
+                    <h2>Tomato Pasta</h2>
+                    <p class="prep-time">Prep Time: 15 minutes</p>
+                    <h3>Ingredients</h3>
+                    <ul>
+                        <li>200g Pasta of choice</li>
+                        <li>1 can Chopped Tomatoes</li>
+                        <li>2 cloves Garlic, minced</li>
+                        <li>2 tbsp Olive Oil</li>
+                        <li>Fresh Basil leaves</li>
+                    </ul>
+                    <h3>Directions</h3>
+                    <ol>
+                        <li>Boil pasta in salted water according to package instructions.</li>
+                        <li>Sauté minced garlic in olive oil in a pan until fragrant.</li>
+                        <li>Add canned tomatoes and simmer for 10 minutes on low heat.</li>
+                        <li>Drain pasta and toss it directly into the tomato sauce.</li>
+                        <li>Garnish with fresh basil and serve hot.</li>
+                    </ol>
+                </div>
+
+                <!-- Recipe 2 -->
+                <div class="recipe-card salad-content">
+                    <h2>Garden Salad</h2>
+                    <p class="prep-time">Prep Time: 10 minutes</p>
+                    <h3>Ingredients</h3>
+                    <ul>
+                        <li>1 head Lettuce, chopped</li>
+                        <li>1 cup Cherry Tomatoes, halved</li>
+                        <li>1 Cucumber, sliced</li>
+                        <li>1 tbsp Olive Oil</li>
+                        <li>1 tbsp Lemon Juice</li>
+                    </ul>
+                    <h3>Directions</h3>
+                    <ol>
+                        <li>Wash and thoroughly dry lettuce, tomatoes, and cucumber.</li>
+                        <li>Chop the lettuce and place it in a large salad bowl.</li>
+                        <li>Add the halved cherry tomatoes and sliced cucumber.</li>
+                        <li>Drizzle olive oil and fresh lemon juice over the top.</li>
+                        <li>Toss gently to combine and serve immediately.</li>
+                    </ol>
+                </div>
+
+                <!-- Recipe 3 -->
+                <div class="recipe-card pancakes-content">
+                    <h2>Banana Pancakes</h2>
+                    <p class="prep-time">Prep Time: 15 minutes</p>
+                    <h3>Ingredients</h3>
+                    <ul>
+                        <li>2 ripe Bananas</li>
+                        <li>2 Eggs</li>
+                        <li>1/2 cup All-Purpose Flour</li>
+                        <li>2 tbsp Milk</li>
+                        <li>1 tbsp Butter</li>
+                    </ul>
+                    <h3>Directions</h3>
+                    <ol>
+                        <li>In a bowl, mash the bananas with a fork until smooth.</li>
+                        <li>Whisk in the eggs, flour, and milk until a batter forms.</li>
+                        <li>Melt butter in a non-stick pan over medium heat.</li>
+                        <li>Pour small circles of batter into the pan.</li>
+                        <li>Cook until bubbles form, flip, and cook until golden brown.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f2ea;
+    color: #4a3b32;
+    padding: 20px;
+    text-align: center;
+}
+
+.weather-container {
+    background-color: #ffffff;
+    border: 1px solid #e3d5ca;
+    border-radius: 16px;
+    max-width: 360px;
+    margin: 40px auto;
+    padding: 25px;
+}
+
+h1 {
+    font-size: 1.4rem;
+    margin-top: 0;
+    color: #a0522d;
+}
+
+.subtitle {
+    font-size: 0.85rem;
+    color: #8b7355;
+    margin-bottom: 20px;
+}
+
+.weather-card {
+    border-bottom: 1px solid #ebd8c2;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.temp-value {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #a0522d;
+    display: block;
+    margin: 8px 0;
+}
+
+.weather-desc {
+    font-style: italic;
+    color: #8b7355;
+}
+
+.weather-details {
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.85rem;
+}
+
+.detail-label {
+    color: #8b7355;
+}
+
+.detail-val {
+    font-weight: bold;
+}
+
+/* 10 Cities Selector Grid (Below Card) */
+.city-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    border-top: 1px solid #ebd8c2;
+    padding-top: 20px;
+}
+
+.city-btn {
+    padding: 8px;
+    background-color: #fcfbfa;
+    border: 1px solid #e3d5ca;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    color: #4a3b32;
+}
+
+.city-btn:hover {
+    background-color: #f7f2ea;
+}
+
+.city-btn.active {
+    background-color: #a0522d;
+    color: #ffffff;
+    border-color: #a0522d;
+}

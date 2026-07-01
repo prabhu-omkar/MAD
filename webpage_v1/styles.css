@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f4;
+    color: #2f3e36;
+    margin: 0;
+    padding: 20px;
+}
+
+.cookbook-container {
+    max-width: 700px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border: 1px solid #cad2c5;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 1.4rem;
+    margin: 0 0 15px 0;
+    border-bottom: 2px solid #84a98c;
+    padding-bottom: 8px;
+}
+
+.layout-wrapper {
+    display: flex;
+    gap: 15px;
+}
+
+.tab-input {
+    display: none;
+}
+
+.sidebar {
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex-shrink: 0;
+}
+
+.nav-label {
+    padding: 10px;
+    background-color: #f4f6f4;
+    border: 1px solid #cad2c5;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: left;
+}
+
+#tab-pasta:checked ~ .layout-wrapper .label-pasta,
+#tab-salad:checked ~ .layout-wrapper .label-salad,
+#tab-pancakes:checked ~ .layout-wrapper .label-pancakes {
+    background-color: #52796f;
+    color: white;
+    border-color: #52796f;
+}
+
+.recipe-card-container {
+    flex: 1;
+}
+
+.recipe-card {
+    display: none;
+    border: 1px solid #cad2c5;
+    border-radius: 4px;
+    padding: 15px;
+}
+
+#tab-pasta:checked ~ .layout-wrapper .pasta-content,
+#tab-salad:checked ~ .layout-wrapper .salad-content,
+#tab-pancakes:checked ~ .layout-wrapper .pancakes-content {
+    display: block;
+}
+
+.prep-time {
+    font-size: 0.9rem;
+    color: #52796f;
+    font-weight: bold;
+}
+
+ul, ol {
+    padding-left: 20px;
+}
