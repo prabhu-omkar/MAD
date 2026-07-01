@@ -1,0 +1,33 @@
+{
+  "name": "mad-modular-apps",
+  "version": "1.0.0",
+  "description": "A zero-dependency collection of 12 modular web applications (Calculator, Weather, Chat, and custom HTML/CSS pages) easily launched via CLI.",
+  "main": "cli.js",
+  "bin": {
+    "mad-apps": "./cli.js"
+  },
+  "keywords": [
+    "modular",
+    "apps",
+    "cli",
+    "calculator",
+    "chat",
+    "weather",
+    "quiz",
+    "cookbook",
+    "survey"
+  ],
+  "author": "prabhu-omkar",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prabhu-omkar/MAD.git"
+  },
+  "bugs": {
+    "url": "https://github.com/prabhu-omkar/MAD/issues"
+  },
+  "homepage": "https://github.com/prabhu-omkar/MAD#readme",
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}
